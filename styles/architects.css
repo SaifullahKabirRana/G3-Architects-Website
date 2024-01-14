@@ -1,6 +1,7 @@
 /* shared styles */
 * {
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
 }
 
 .btn-primary {
@@ -180,6 +181,8 @@ main {
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
+    margin-top: 180px;
+    margin-bottom: 24px;
 
 }
 
@@ -189,6 +192,7 @@ main {
     font-weight: 400;
     margin-top: 24px;
     margin-bottom: 50px;
+
 
 }
 
@@ -218,6 +222,11 @@ main {
 
 }
 
+.feature-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
 .features {
     display: flex;
     margin-top: 130px;
@@ -244,6 +253,53 @@ main {
     margin-bottom: 20px;
 }
 
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    text-align: center;
+    padding: 40px 30px;
+    color: #FFF;
+    position: relative;
+    bottom: 150px;
+
+}
+
+.feature-img img {
+    margin-left: 90px;
+    height: 90%;
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+/* footer styles */
+.footer-section {
+    border-radius: 8px;
+    background: #FFF4E7;
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px 240px 240px 216px;
+
+}
+
+.footer-section p {
+    color: #424242;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
 /* responsive media queries */
 
 /* mobile or small devices */
@@ -255,8 +311,19 @@ main {
 
     nav,
     .facts-card-container,
+    .features,
     .sponsors-img-container {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+        position: static;
+        width: 85%;
     }
 
     .teams-container {
@@ -280,6 +347,15 @@ main {
     .facts-card-container {
         gap: 20px;
     }
+    .footer-section{
+        margin:0;
+        width: 100%;
+        text-align: center;
+          
+    }
+    .footer-section p{
+        font-size: 1rem;
+    }
 }
 
 /* tablet or medium device */
@@ -290,12 +366,18 @@ main {
     }
 
     nav,
+    .features,
     .sponsors-img-container {
         flex-direction: column;
     }
 
     .teams-container {
         flex-direction: column-reverse;
+    }
+    .footer-section{
+        margin: 0;
+        width: 100%;
+        text-align: center;
     }
 
 }
